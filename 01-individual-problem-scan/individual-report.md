@@ -317,26 +317,31 @@ File đính kèm: `01-individual-problem-scan-workflow-card-3.png`
 **Card tôi muốn pitch nhất:**
 
 ```text
+Problem Card #1 — Khó dựng bộ khung ban đầu cho dự án GitHub mới.
 
+Tôi là sinh viên mới tốt nghiệp và thường xây dựng các dự án cá nhân như website bán hàng, xem phim hoặc quản lý công việc để học thêm công nghệ và bổ sung portfolio. Mỗi khi bắt đầu một dự án mới, tôi chưa thể đi ngay vào phát triển tính năng mà phải tự nhớ các công nghệ đã dùng, tìm lại repository mẫu, lựa chọn cấu trúc thư mục, cài dependency và sửa cấu hình. Với ba dự án gần nhất, tôi ước tính giai đoạn này mất khoảng 60–90 phút cho mỗi dự án; bottleneck lớn nhất là 15–25 phút tìm và so sánh các dự án mẫu có chất lượng, phiên bản và cấu trúc khác nhau.
+
+Giải pháp tôi muốn thử là một bộ AI skills chuyên biệt dựa trên CV, GitHub và các blueprint đã được tôi xác nhận. Workflow nhận Project Brief, đọc Capability Profile, đề xuất stack phù hợp với năng lực hiện tại, truy xuất blueprint chuẩn, dựng repository và chạy validation. Tôi vẫn phải duyệt stack trước khi tạo file, kiểm tra dependency, chạy thử và quyết định chấp nhận hoặc rollback. Mục tiêu là giảm thời gian khởi tạo xuống dưới 30 phút, bảo đảm repository có cấu trúc, README, .env.example và script chạy, đồng thời không phải tổ chức lại cấu trúc lớn trong hai buổi phát triển đầu tiên.
 ```
 
 **Vì sao (2-3 câu: workflow gì, số đo gì, impact gì):**
 
 ```text
-
+Workflow này lặp lại mỗi khi tôi bắt đầu một dự án và có thể đo từ lúc chốt ý tưởng đến khi repository chạy thành công. Nếu giảm từ 60–90 phút xuống dưới 30 phút, tôi có thể dành nhiều thời gian hơn cho chức năng chính, duy trì convention nhất quán và tạo portfolio dễ trình bày hơn. Ý tưởng cũng có thể hỗ trợ sinh viên hoặc một nhóm lập trình nhỏ, nhưng tôi cần kiểm chứng liệu pain này có đủ phổ biến và liệu bộ skills có tốt hơn template hoặc CLI sẵn có hay không.
 ```
 
 **Câu hỏi tôi muốn nhóm challenge (1-2 câu hỏi đúng chỗ yếu):**
 
 ```text
-
+1. Với một dự án mới, template GitHub hoặc framework CLI có thể giải quyết bao nhiêu phần trăm workflow mà chưa cần AI?
+2. Việc đọc CV/GitHub có đủ để đánh giá năng lực và chọn stack phù hợp không, hay cần thêm self-assessment và xác nhận thủ công để tránh suy diễn sai?
 ```
 
 **AI phản biện Card (nếu có):**
-- Điểm yếu AI chỉ ra:
-- Tôi sửa gì:
+- Điểm yếu AI chỉ ra: Baseline 60–90 phút mới là ước tính từ trải nghiệm cá nhân, chưa có log theo từng bước hoặc dữ liệu từ người dùng khác. Ý tưởng ban đầu cũng dễ bị solution-first khi mặc định cần Agent, trong khi template, script hoặc framework CLI có thể xử lý phần lớn thao tác lặp lại. CV và GitHub chỉ cho thấy công nghệ từng xuất hiện, không chứng minh mức độ thành thạo hoặc ý định tiếp tục sử dụng; cơ chế tự cập nhật còn có rủi ro thêm dependency, convention hoặc kiến trúc chưa được kiểm chứng.
+- Tôi sửa gì: Tôi giữ Project Brief và Capability Profile có ba trạng thái “đã xác nhận/đang học/chưa dùng”, chỉ truy xuất blueprint đã được duyệt và đặt human gate trước khi tạo file. Bộ skills không tự ghi đè repository, không tự chạy lệnh nguy hiểm và không thêm dependency ngoài allowlist; sau khi scaffold phải chạy validation và chờ tôi nghiệm thu. Tôi cũng xác định phương án non-AI là template + CLI + checklist, đồng thời sẽ bấm giờ ba dự án tiếp theo và hỏi thêm lập trình viên mới trước khi kết luận nên phát triển Agent.
 
 ### Self-check nộp phần 01
-- [ ] Có 5+ problems + top 3 Cards đủ field
-- [ ] Mỗi Card có workflow trước/sau + bottleneck + metric + fallback
-- [ ] Đã chọn 1 card pitch + câu hỏi challenge
+- [x] Có 5+ problems + top 3 Cards đủ field
+- [x] Mỗi Card có workflow trước/sau + bottleneck + metric + fallback
+- [x] Đã chọn 1 card pitch + câu hỏi challenge
